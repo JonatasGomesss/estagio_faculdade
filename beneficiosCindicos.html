@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefícios e Solicitação</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+        /* Importação de ícones */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+        /* Reset Global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        /* Títulos */
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .subtitulo {
+            text-align: center;
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 2rem;
+        }
+
+        /* Benefícios - Cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .card {
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .card .descricao {
+            padding: 1rem;
+            font-size: 1rem;
+            text-align: center;
+            color: #555;
+        }
+
+        .link {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            border-top: 1px solid #ddd;
+            padding: 0.8rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .link:hover {
+            color: #0056b3;
+        }
+
+        /* Formulário */
+        .formulario {
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .formulario input,
+        .formulario button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .formulario button {
+            background-color: #333;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .formulario button:hover {
+            background-color: #555;
+        }
+
+        .termos {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .termos a {
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #666;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer-content ul {
+            list-style: none;
+        }
+
+        .footer-content ul li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .footer-content ul li a:hover {
+            color: #007BFF;
+        }
+
+        .social a {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social a:hover {
+            color: #007BFF;
+        }
+
+        .copyright {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><strong>Logo</strong></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Como Funciona</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Parcerias e Vantagens</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+        <button>Button</button>
+    </header>
+
+    <!-- Seção Benefícios -->
+    <section class="container">
+        <h1>Benefícios para Síndicos e Administradoras</h1>
+        <p class="subtitulo">Benefícios de Ter uma Geladeira Always On no Seu Condomínio</p>
+        
+        <div class="cards">
+            <div class="card">
+                <img src="./imgs.webp" alt="Comodidade para moradores">
+                <p class="descricao">Aumento de comodidade para os moradores</p>
+                <a href="#" class="link">Read more</a>
+            </div>
+            <div class="card">
+                <img src="./imgs.webp" alt="Ganhos financeiros">
+                <p class="descricao">Ganhos financeiros com a instalação</p>
+                <a href="#" class="link">Read more</a>
+            </div>
+            <div class="card">
+                <img src="./imgs.webp" alt="Fácil manutenção">
+                <p class="descricao">Fácil manutenção e reposição de bebidas</p>
+                <a href="#" class="link">Read more</a>
+            </div>
+            <div class="card">
+                <img src="./imgs.webp" alt="Instalação rápida">
+                <p class="descricao">Instalação rápida e sem custos adicionais</p>
+                <a href="#" class="link">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Solicitação -->
+    <section class="formulario">
+        <h1>Formulário de Solicitação</h1>
+        <form>
+            <input type="text" placeholder="Nome Completo" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="tel" placeholder="Telefone" required>
+            <input type="text" placeholder="Nome do Condomínio" required>
+            <input type="number" placeholder="Quantidade de Unidades" required>
+            <input type="text" placeholder="Cidade" required>
+            <button type="submit">Solicite Uma Proposta</button>
+            <p class="termos">
+                By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+            </p>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div>
+            <h4>Logo</h4>
+            <div class="social-icons">
+                <i>📷</i>
+                <i>📘</i>
+                <i>🐦</i>
+            </div>
+        </div>
+        <div>
+            <h4>Links Rápidos</h4>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Produtos</a>
+            <a href="#">Como Funciona</a>
+        </div>
+        <div>
+            <h4>Contatos</h4>
+            <p>E-mail</p>
+            <p>Telefone</p>
+        </div>
+        <div class="copyright">
+            © 2024 Your Website. All rights reserved. | 
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer> 
+</body>
+</html>
